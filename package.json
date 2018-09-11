@@ -1,0 +1,46 @@
+{
+  "name": "zero-time-dilemma",
+  "author": "jyntran",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "pebble": {
+    "displayName": "Zero Time Dilemma",
+    "uuid": "d3eb350f-dbc3-4e70-a187-d36259bf90b7",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+        {
+          "file": "fonts/goodbyeDespair.ttf",
+          "name": "FONT_PIXEL_48",
+          "characterRegex": "[0-9:]",
+          "type": "font"
+        },
+        {
+          "file": "fonts/goodbyeDespair.ttf",
+          "name": "FONT_PIXEL_24",
+          "characterRegex": "[0-9:%.A-Z ]",
+          "type": "font"
+        }
+      ]
+    }
+  }
+}

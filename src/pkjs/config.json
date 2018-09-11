@@ -1,0 +1,15 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "Zero Time Dilemma Watchface"
+  },
+  {
+    "type": "section",
+    "items": [
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save Settings"
+  }
+]
