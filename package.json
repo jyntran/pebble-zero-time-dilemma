@@ -29,14 +29,14 @@
     "resources": {
       "media": [
         {
-          "file": "fonts/goodbyeDespair.ttf",
-          "name": "FONT_PIXEL_48",
+          "file": "fonts/Hyperspace Bold.otf",
+          "name": "FONT_PIXEL_42",
           "characterRegex": "[0-9:]",
           "type": "font"
         },
         {
-          "file": "fonts/goodbyeDespair.ttf",
-          "name": "FONT_PIXEL_24",
+          "file": "fonts/Hyperspace Bold.otf",
+          "name": "FONT_PIXEL_18",
           "characterRegex": "[0-9:%.A-Z ]",
           "type": "font"
         }

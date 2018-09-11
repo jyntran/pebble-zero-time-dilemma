@@ -43,7 +43,7 @@ static void clock_update_proc(Layer *layer, GContext *ctx) {
   layer_set_frame(layer, bounds);
   layer_set_frame(text_layer_get_layer(s_time_layer),
     GRect(
-      0, bounds.size.h/4 + 12, bounds.size.w, bounds.size.h/2
+      0, bounds.size.h/4 + 16, bounds.size.w, bounds.size.h/2
     )
   );
 }
@@ -60,7 +60,7 @@ static void date_update_proc(Layer *layer, GContext *ctx) {
   layer_set_frame(layer, bounds);
   layer_set_frame(text_layer_get_layer(s_date_layer),
     GRect(
-      0, 0, bounds.size.w, bounds.size.h/4
+      0, 12, bounds.size.w, bounds.size.h/4
     )
   );
 
@@ -122,7 +122,7 @@ static void prv_window_load(Window *window) {
   text_layer_set_font(s_date_layer, fonts_load_custom_font(resource_get_handle(FONT_SMALL)));
   text_layer_set_text_alignment(s_date_layer, GTextAlignmentCenter);
   text_layer_set_background_color(s_date_layer, GColorClear);
-  text_layer_set_text_color(s_date_layer, GColorRed);
+  text_layer_set_text_color(s_date_layer, GColorLightGray);
   layer_add_child(date_layer, text_layer_get_layer(s_date_layer));
 
   s_time_layer = text_layer_create(bounds);
@@ -136,7 +136,7 @@ static void prv_window_load(Window *window) {
   text_layer_set_font(s_battery_layer, fonts_load_custom_font(resource_get_handle(FONT_SMALL)));
   text_layer_set_text_alignment(s_battery_layer, GTextAlignmentCenter);
   text_layer_set_background_color(s_battery_layer, GColorClear);
-  text_layer_set_text_color(s_battery_layer, GColorRed);
+  text_layer_set_text_color(s_battery_layer, GColorLightGray);
   layer_add_child(battery_layer, text_layer_get_layer(s_battery_layer));
 
   layer_add_child(window_layer, date_layer);
